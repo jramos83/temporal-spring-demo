@@ -12,7 +12,19 @@ java {
 }
 
 repositories {
-    mavenCentral()
+    if (project.hasProperty('artifactoryUrl')) {
+        maven {
+            url artifactoryUrl
+            if (project.hasProperty('artifactoryUser')) {
+                credentials {
+                    username artifactoryUser
+                    password artifactoryPassword
+                }
+            }
+        }
+    } else {
+        mavenCentral()
+    }
 }
 
 dependencies {

@@ -4,3 +4,5 @@ target/
 .mvn/
 mvnw
 mvnw.cmd
+gradle.properties
+certs/

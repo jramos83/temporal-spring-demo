@@ -1,0 +1,6 @@
+# Copy this file to gradle.properties and fill in your Artifactory details.
+# gradle.properties is gitignored so credentials are never committed.
+
+artifactoryUrl=https://artifactory.your-company.com/artifactory/libs-release
+artifactoryUser=your-username
+artifactoryPassword=your-api-key-or-password
