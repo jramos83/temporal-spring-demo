@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: temporal-spring-demo
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.example.temporal: INFO
+    io.temporal: WARN

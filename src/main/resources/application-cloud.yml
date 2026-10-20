@@ -1,0 +1,7 @@
+# Activate with: --spring.profiles.active=cloud
+temporal:
+  target: your-namespace.tmprl.cloud:7233
+  namespace: your-namespace.your-account-id
+  tls:
+    cert-path: certs/client.pem
+    key-path: certs/client.key
